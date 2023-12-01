@@ -579,8 +579,6 @@ function getCardId(value) {
   const rowChar = value.slice(0, -1);
   const colChar = value.slice(-1);
 
-  console.log(rowChar, colChar * row.length);
-
   return row.indexOf(rowChar) + column.indexOf(colChar) * row.length;
 }
 
